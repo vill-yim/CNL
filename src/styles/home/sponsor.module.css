@@ -1,0 +1,226 @@
+.content-sponsor{
+    width:100%;
+    height: 100%;
+max-height: 150px;
+overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: #FFA200;
+}
+
+.sponsors {
+    display: flex;
+    height: 150px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    overflow: hidden; 
+    position: relative;
+}
+  
+.sponsors-wrapper {
+  display: flex;
+  animation: slide 45s linear infinite; 
+}
+  
+@keyframes slide {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-25%); 
+  }
+}
+
+.BMW,
+.rodeo,
+.TBC,
+.CoinBeast,
+.RoninDojo,
+.Hodl,
+.WIM,
+.Neutronopay,
+.TTO,
+.Keeper,
+.simply,
+.SeedSigner,
+.Shamory,
+.BP,
+.mynode,
+.TBI,
+.Luxor,
+.Amber,
+.MA,
+.BCB,
+.FF,
+.OPA,
+.POD,
+.LKoffee,
+.Henge,
+.Boba {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  flex-shrink: 0; /* Evita que los elementos se encojan */
+}
+
+
+/* Logo Files */
+
+.BMW {
+  background-image: url('../../../public/clients-logos/BMW.svg');
+}
+
+.rodeo {
+  background-image: url('../../../public/clients-logos/Bitcoin_Rodeo.svg');
+}
+
+.TBC {
+  background-image: url('../../../public/clients-logos/TBC.svg');
+}
+
+.CoinBeast {
+  background-image: url('../../../public/clients-logos/CoinBeast.svg');
+}
+
+.RoninDojo {
+  background-image: url('../../../public/clients-logos/RoninDojo.svg');
+}
+
+.Hodl {
+  background-image: url('../../../public/clients-logos/Hodl_Hodl.svg');
+}
+
+.WIM {
+  background-image: url('../../../public/clients-logos/WIM.svg');
+}
+
+.Neutronopay {
+  background-image: url('../../../public/clients-logos/Neutronopay.svg');
+}
+
+.TTO {
+  background-image: url('../../../public/clients-logos/TTO.svg');
+}
+
+.Keeper {
+  background-image: url('../../../public/clients-logos/Keeper.svg');
+}
+
+.simply {
+  background-image: url('../../../public/clients-logos/Simply_Bitcoin.svg');
+}
+
+.SeedSigner {
+  background-image: url('../../../public/clients-logos/SeedSigner.svg');
+}
+
+.Shamory {
+  background-image: url('../../../public/clients-logos/Shamory.svg');
+}
+
+.BP {
+  background-image: url('../../../public/clients-logos/Bitcoin_Park.svg');
+}
+
+.mynode {
+  background-image: url('../../../public/clients-logos/MyNode.svg');
+}
+
+.TBI {
+  background-image: url('../../../public/clients-logos/TBI.svg');
+}
+
+.Luxor {
+  background-image: url('../../../public/clients-logos/Luxor.svg');
+}
+
+.Amber {
+  background-image: url('../../../public/clients-logos/Amber_App.svg');
+}
+
+.MA {
+  background-image: url('../../../public/clients-logos/Mass_Adoption.svg');
+}
+
+.BCB {
+  background-image: url('../../../public/clients-logos/BCB.svg');
+}
+
+.FF {
+  background-image: url('../../../public/clients-logos/Freedom_Files.svg');
+}
+
+.OPA {
+  background-image: url('../../../public/clients-logos/OPA.svg');
+}
+
+.POD {
+  background-image: url('../../../public/clients-logos/POD256.svg');
+}
+
+.LKoffee {
+  background-image: url('../../../public/clients-logos/Lightning_Koffee.svg');
+}
+
+.Henge {
+  background-image: url('../../../public/clients-logos/Henge.svg');
+}
+
+.Boba {
+  background-image: url('../../../public/clients-logos/Boba.svg');
+}
+
+
+
+/* Duplicar los elementos para crear el carrusel infinito */
+.sponsors-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slide 25s linear infinite;
+}
+
+.sponsors-wrapper .BMW,
+.sponsors-wrapper .rodeo,
+.sponsors-wrapper .TBC,
+.sponsors-wrapper .CoinBeast,
+.sponsors-wrapper .RoninDojo,
+.sponsors-wrapper .Hodl,
+.sponsors-wrapper .WIM,
+.sponsors-wrapper .Neutronopay,
+.sponsors-wrapper .TTO,
+.sponsors-wrapper .Keeper,
+.sponsors-wrapper .simply,
+.sponsors-wrapper .SeedSigner,
+.sponsors-wrapper .Shamory,
+.sponsors-wrapper .BP,
+.sponsors-wrapper .mynode,
+.sponsors-wrapper .TBI,
+.sponsors-wrapper .Luxor,
+.sponsors-wrapper .Amber,
+.sponsors-wrapper .MA,
+.sponsors-wrapper .BCB,
+.sponsors-wrapper .FF,
+.sponsors-wrapper .OPA,
+.sponsors-wrapper .POD,
+.sponsors-wrapper .LKoffee,
+.sponsors-wrapper .Henge,
+.sponsors-wrapper .Boba {
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Duplicar los elementos en el contenedor para evitar el "fin" */
+.sponsors-wrapper::after {
+  content: "";
+  display: flex;
+  flex-shrink: 0;
+}
+
+  
+
+

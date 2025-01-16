@@ -1,0 +1,44 @@
+.btn{
+    border-radius: 50%;
+    padding: 1rem ;
+    margin-top: 60px;
+    margin-left: 90%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    justify-self: flex-end;
+    z-index: 1;
+    border: none;
+  }
+  
+  .btn::before{
+    content: '';
+    z-index: -1;
+    width: 200%;
+    height:200%;
+  margin-top: 1rem;
+    border-radius: 100%;
+    position: absolute;
+    background-color: hsla(35 100% 50% / 0.75); /* Cambié el morado por el naranja de Bitcoin */
+    background-image: radial-gradient(
+        at 51% 89%,
+        hsla(40, 100%, 60%, 1) 0px, /* Naranja de Bitcoin */
+        transparent 50%
+    ),
+    radial-gradient(at 100% 100%, hsla(35, 100%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 91%, hsla(35, 100%, 60%, 1) 0px, transparent 50%);
+    background-position: top;
+  
+    transition: all .5s ease-in-out;
+  
+  }
+  .btn:hover{
+    color: #f4f4f4;
+  
+  }
+  
+  .btn:hover::before{
+    transform: translateY(-50px) translateX(-50px);
+  }
+  

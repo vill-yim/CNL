@@ -1,0 +1,173 @@
+.nav-header {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-header ul {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.link-header {
+  max-width: 100%;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: #ffffff;
+}
+
+.link-header:hover {
+  cursor: pointer;
+  color: #FFD29A;
+  transition: all 0.5s ease-out;
+}
+.dropdown {
+  text-align: center;
+  position: relative;
+}
+
+.services-drop {
+  text-align: center;
+  width:100%;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  margin:0 20px 0 10px;
+  color: #ffffff;
+}
+
+.services-drop-select{
+  text-align: center;
+  width:100%;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  margin:0 20px 0 10px;
+  color: #f7931a;
+  
+}
+
+.services-drop:hover {
+  cursor: pointer;
+  color: #FFD29A;
+  transition: all 0.5s ease-out;
+}
+
+.flag-down {
+  transition: all .5s ease-in-out;
+  width: 20px;
+  height: 20px;
+  margin:.2rem 0 0 .2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(".././../../public/extras/flag-down.png");
+}
+
+
+
+.wraper-menu{
+  padding: 1.2rem 0;
+  height: 260px;
+}
+
+.dropdown-menu {
+  height: 0px;
+  overflow: hidden;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: -10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  height: 260px;
+  transition: all .5s ease-in-out;
+}
+
+
+.dropdown:hover .flag-down {
+  transform: rotate(180deg);
+}
+
+
+.dropdown-item{
+  background: #181716;
+  text-align: start;
+  color: #ffffff;
+  width: 180px;
+  font-family: CreatoDisplayMedium;
+  padding: 1rem 0 .5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-item:hover{
+
+color:  #FFD29A;
+
+}
+/*----------------------*/
+.link-select {
+  max-width: 100%;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: #f7931a;
+}
+
+.link-select:hover{
+  color: #f7931a;
+  
+}
+.selected{
+  color: #f7931a;
+}
+.selected:hover{
+  color: #f7931a;
+
+}
+
+.none{
+  color: #ffffff;
+}
+
+.hide-menu{
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}

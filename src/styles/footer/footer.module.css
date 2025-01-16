@@ -1,0 +1,78 @@
+.content-footer{
+    padding-top: 1rem;
+    height: 98%;
+    min-height: 55px;
+    background: #333333;
+    width: 1600px;
+    top: 0;
+    max-width: 100%;
+display: flex;
+margin: 0 auto;
+align-items: center;
+border-bottom: 5px solid #F7931A; ;
+padding: 0 .5rem;
+justify-content: space-between;
+}
+
+.logo-footer{
+  width: 30%;
+  max-width: 100%;
+  max-height: 60px;
+}
+
+
+.lg-footer{
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  max-width: 100%;
+  aspect-ratio: 7/2;
+  background-repeat: no-repeat;
+    background-image: url(".././../../public/logos/logo-white.png");
+}
+
+.redes-footer{
+    width: 40%;
+    padding-left:  .2rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.red-ig,
+.red-lkd,
+.red-x {
+  width:50px;
+  height:auto;
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  margin:0 5% ;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.red-ig {
+  background-image: url(".././../../public/redes/ig.png");
+}
+.red-lkd {
+  background-image: url(".././../../public/redes/lkdin.png");
+}
+.red-x {
+  background-image: url(".././../../public/redes/x.png");
+}
+
+.copy{
+ text-transform: capitalize;
+  width:30%;
+    max-width: 100%;
+    font-size: clamp(12px,2vw,30px);
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 0 auto;
+    justify-self: flex-end;
+    color: #FFFFFF;
+    font-family: montserrat;
+}

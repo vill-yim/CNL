@@ -1,0 +1,119 @@
+.content-about {
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-about {
+  padding-top: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 1250px;
+  max-width: 100%;
+  background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.title-about h3 {
+  font-style: bold;
+  font-weight: 900;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-family: StretchPro;
+  font-size: clamp(18px, 2vw, 54px);
+}
+
+.renders-abouts {
+  width: 1250px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+  margin: 10px auto 0 auto;
+}
+
+.render-content-abouts {
+  width: 900px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  margin: 5px auto;
+}
+
+.render-number-abouts {
+  width: 45px;
+  border-radius: 100%;
+  background: #f7931a;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-about1 {
+  background-image: url("../../../public/numbers-abouts/abt1.png");
+}
+
+.img-about2 {
+  background-image: url("../../../public/numbers-abouts/abt2.png");
+}
+.img-about3 {
+  background-image: url("../../../public/numbers-abouts/abt3.png");
+}
+
+.img-about1,
+.img-about2,
+.img-about3 {
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 1/1;
+}
+
+.render-title-abouts {
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: CreatoDisplayBold;
+  max-width: 100%;
+  color: #ffe5c4;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  text-align: center;
+  font-size: clamp(18px, 1.2vw, 22px);
+  margin-top: 10px;
+}
+
+.render-title-abouts h4 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.render-text-abouts {
+  color: #ffe5c4;
+  width: 950px;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: CreatoDisplayMedium;
+  font-kerning: none;
+  letter-spacing: .1rem;
+  word-spacing: .01rem;
+  font-variant-ligatures: none;
+  font-size: clamp(16px, 1.2vw, 18px);
+  margin: 5px auto;
+  text-align: center;
+}
+
+.btn-call-sec {
+  width: 100%;
+  height: 80px;
+}

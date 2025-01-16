@@ -1,0 +1,123 @@
+.btn-sec {
+    width: 300px;
+    max-width: 100%;
+    height: 80px;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* From Uiverse.io by doniaskima */
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: rgb(223, 115, 14); 
+  background-image: none;
+  color: hsla(34, 100%, 50%, 1);
+  
+  cursor: pointer;
+
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 230px;
+  box-shadow: 1px 3px 3px solid #000000;
+  height: 60px;
+  -webkit-mask-image: -webkit-radial-gradient(rgb(255, 154, 2), rgb(209, 104, 18));
+  padding: 0;
+  max-width: 100%;
+  text-transform: uppercase;
+}
+
+.btn-12:disabled {
+  cursor: default;
+}
+
+.btn-12:-moz-focusring {
+  outline: auto;
+}
+
+.btn-12 svg {
+    position: relative;
+    z-index: 100;
+  display: block;
+  overflow: visible;
+  vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+  display: none;
+}
+
+.btn-12 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-12 span {
+    width: 190px;
+    max-width: 100%;
+  mix-blend-mode: normal;
+}
+
+.btn-12:after,
+.btn-12:before {
+    z-index: -1;
+  background: linear-gradient(
+    90deg,
+    hsla(34, 100%, 50%, 1) 25%, /* Amarillo de Bitcoin (cambio de fondo) */
+    transparent 0,
+    transparent 50%,
+    hsla(34, 100%, 50%, 1) 0,  /* Amarillo de Bitcoin (cambio de fondo) */
+    hsla(34, 100%, 50%, 1) 75%, /* Amarillo de Bitcoin (cambio de fondo) */
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    hsla(34, 100%, 50%, 1) 0,  /* Amarillo de Bitcoin (cambio de fondo) */
+    hsla(34, 100%, 50%, 1) 50%, /* Amarillo de Bitcoin (cambio de fondo) */
+    transparent 0,
+    transparent 75%,
+    hsla(34, 100%, 50%, 1) 0   /* Amarillo de Bitcoin (cambio de fondo) */
+  );
+  z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+
+
+.btn-12 span{
+    color: #fff;
+}

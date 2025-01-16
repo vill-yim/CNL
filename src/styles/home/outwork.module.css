@@ -1,0 +1,158 @@
+.content-outwork {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-outwork {
+  font-family: StretchPro;
+  font-size: clamp(36px, 2vw, 54px);
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: -0.05;
+  background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.flexbox-ourwork {
+  width: 1480px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+}
+.flexbox-ourwork2 {
+  width: 1480px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% auto 0 auto;
+}
+
+
+.image1-ourwork {
+  width: 520px;
+  max-width: 100%;
+  min-height: 250px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  aspect-ratio: 16/9;
+  max-width: 100%;
+  background-image: url("../../../public/bgworks/image.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-ourwork {
+  width: 150px;
+  margin-top: 3.5rem;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 40px;
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  background-image: url("../../../public/bgworks/mineslg.png");
+}
+
+.image2-ourwork {
+  
+  width: 520px;
+  min-height: 250px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  max-width: 100%;
+  background-image: url("../../../public/bgworks/image2.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img1-ourwork {
+  margin-top: 30%;
+  width: 350px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 40px;
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  background-image: url("../../../public/bgworks/btclg.png");
+}
+
+.descriptions-ourwork {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  color: #ffe5c4;
+  padding:0 0.5rem;
+  text-align: left;
+}
+
+.descriptions2-ourwork {
+  width: 800px;
+  margin: 0 auto;
+  padding:0 0.5rem;
+  max-width: 100%;
+  color: #ffe5c4;
+  text-align: left;
+}
+
+.title-description-ourwork {
+  font-weight: 900;
+  font-family: CreatoDisplayBold;
+  font-size: clamp(18px, 1.5vw, 32px);
+}
+
+.text-description-ourwork {
+  font-family: CreatoDisplayMedium;
+  text-align: justify;
+  font-size: clamp(16px, 1.1vw,24px);
+  padding: 1rem 0;
+}
+
+
+.btn-call-cover {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width:880px) {
+  
+.flexbox-ourwork2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.image2-ourwork {
+order: 1;
+}
+
+.descriptions2-ourwork {
+order: 2;
+}
+
+}

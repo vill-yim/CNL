@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+
+
+.header {
+  margin: 0 auto;
+  width: 1600px;
+  height: 70px;
+  padding: .5rem 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-logo {
+  width: 400px;
+  max-width: 100%;
+}
+
+.logo {
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  max-width: 100%;
+  aspect-ratio: 7/2;
+  background-repeat: no-repeat;
+  background-image: url(".././../../public/logos/logo-white.png");
+}
+
+/*----------------------------------------------*/
+.info-header {
+  width: 400px;
+  max-width: 65%;
+  display: flex;
+  align-items: center;
+  height: 54px;
+}
+
+
+/*----------------------------------------------*/
+
+.redes {
+  width: 50%;
+  align-items: center;
+  max-width: 100%;
+}
+
+.redes ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: space-center;
+}
+
+.red-ig,
+.red-lkd,
+.red-x {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  margin:0 5% ;
+  transition: all .3s ease-in;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.red-ig {
+  background-image: url(".././../../public/redes/ig.png");
+}
+.red-lkd {
+  background-image: url(".././../../public/redes/lkdin.png");
+}
+.red-x {
+  background-image: url(".././../../public/redes/x.png");
+}
+
+.red-ig:hover{
+  filter: drop-shadow(1px 1px 1px #FFA200);
+}
+.red-lkd:hover{
+  filter: drop-shadow(1px 1px 1px #FFA200);
+}
+.red-x:hover{
+  filter: drop-shadow(1px 1px 1px #FFA200);
+}
+
+
+
+/*----------------------------------------------*/
+
+
+.menu-header{
+  width: 600px;
+  max-width: 100%;
+}
+ 
+
+.btn-header {
+  max-width: 180px;
+  width:100%;
+}
+
+.menu-mobile img{
+  width: 45px;
+}
+
+
+/*-------------------------------------------------*/
+.menu-mobile{
+  display: none;
+}
+
+@media (max-width:740px) {
+    
+.btn-header{
+  width: 160px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+
+
+.content-logo{
+    margin-left: .5rem;
+    width: 90px;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 80px;
+    aspect-ratio: 9/3;
+  }
+
+  .menu-mobile{
+    display: flex;
+    width:280px;
+    max-width: 100%;
+    margin-right: 1rem;
+
+    justify-content:flex-end;
+  }
+
+  .menu-header{
+    display: none;
+  }
+   
+  .info-header{
+    display: none;
+  }
+
+}

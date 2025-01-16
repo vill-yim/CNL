@@ -1,0 +1,62 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: lazy 1s linear;
+}
+
+.cover{
+    width: 100%;
+  margin: 0 auto;
+    justify-content: center;
+  }
+
+
+@keyframes lazy {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+  
+  .aboutus{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  
+  .ourwork{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    justify-content: center;
+
+  }
+.calendary,.ourprocess{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem auto;
+    justify-content: center;
+  }
+  .wemake{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0;
+  }
+  
+  
+  .testimonials{
+    width: 100%;
+    background: #F7931A;
+    display: flex;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
