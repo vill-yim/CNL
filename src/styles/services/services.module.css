@@ -64,14 +64,15 @@ max-width: 100%;
 }
 
 .text-cover{
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   width: 100%;
     font-size: 18px;
     font-family: CreatoDisplayBold;
     color: #ffd29a;
 }
 .btn-cover{
-    margin: 10px 0;
+    width: 280px;
+    margin: 20px 0;
 }
 
 /*-------------------------*/

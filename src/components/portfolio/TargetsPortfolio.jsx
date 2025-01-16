@@ -3,16 +3,15 @@ import { ModalView } from '../modal/ModalView';
 import styles from "../../styles/portfolio/portfolio.module.css";
 import { useStoreView } from '../../utils/useStoreView';
 
-export const TargetsPortfolio = ({ svg,name, type, altimg, srcimg,modal }) => {
+export const TargetsPortfolio = ({ name, type, altimg, srcimg,modal }) => {
 const {setView}= useStoreView()
 
   return (
     <div
-    onClick={() => {
-      setView(true);
-    }}
+    
     className={styles["projectfolio"]}
   >
+ {modal}
         <div className={styles["img-project"]}>
           <div
             className={styles["img-proj"]}
@@ -23,8 +22,6 @@ const {setView}= useStoreView()
           <div className={styles["name-projectfolio"]}> {name}</div>
           <div className={styles["type-projectfolio"]}>{type}</div>
         </div>
-    <ModalView src={svg} />
-
       </div>
     );
   };
