@@ -9,9 +9,9 @@ export const Portfolio = () => {
   const [seleccionado, setSeleccionado] = useState(0);
   const { social, motion, design, d3, showPortfolio } = portfolioStore();
 
-  useEffect(()=>{
-showPortfolio("design")
-  },[])
+  useEffect(() => {
+    showPortfolio("design");
+  }, []);
 
   const handleClick = (i) => {
     setSeleccionado(i);
@@ -20,9 +20,7 @@ showPortfolio("design")
   };
 
   return (
-    <div className={  styles["content-portfolio"]}>
-
-      
+    <div className={styles["content-portfolio"]}>
       <div className={styles["cover-portfolio"]}>
         <div className={styles["title-portfolio"]}>
           <h4>Portfolio</h4>
@@ -54,24 +52,22 @@ showPortfolio("design")
             <TargetsPortfolio
               name={"Bitcoin Park"}
               type={"Poster"}
-              srcimg={"https://i.ibb.co/kcg8GFT/Bitcoin-Park-1.png"}
+              srcimg={"../../../public/portfolio/design/btcpark.svg"}
             />
             <TargetsPortfolio
               name={"MYNODE"}
               type={"Social Media"}
-       modal={ <ModalView src={"../../../public/portfolio/blackf.svg"}/> }
-              
-              srcimg={"https://i.ibb.co/wppy1Kp/minode.png"}
+              srcimg={"../../../public/portfolio/design/blackf.svg"}
             />
             <TargetsPortfolio
               name={"The Bitcoin Company"}
               type={"Poster"}
-              srcimg={"https://i.ibb.co/wBHTxGw/btcompany.png"}
+              srcimg={"../../../public/portfolio/design/spalda.svg"}
             />
             <TargetsPortfolio
               name={"Bitcoin Park"}
               type={"Poster"}
-              srcimg={"https://i.ibb.co/3zSB1q2/btpark.png"}
+              srcimg={"../../../public/portfolio/design/hphour.svg"}
             />
             <TargetsPortfolio
               name={"MYNODE"}
@@ -86,7 +82,9 @@ showPortfolio("design")
             <TargetsPortfolio
               name={"BTCaesy"}
               type={"Branding"}
-              srcimg={"https://i.ibb.co/q0jsqYQ/btcasey.pnghttps://i.ibb.co/q0jsqYQ/btcasey.png"}
+              srcimg={
+                "https://i.ibb.co/q0jsqYQ/btcasey.pnghttps://i.ibb.co/q0jsqYQ/btcasey.png"
+              }
             />
             <TargetsPortfolio
               name={"Aether"}
@@ -199,24 +197,24 @@ showPortfolio("design")
               name={"CyberHornet"}
               type={"3D Design"}
               srcimg={"https://i.ibb.co/022jqBX/hornet.png"}
-            /> 
-          <TargetsPortfolio
+            />
+            <TargetsPortfolio
               name={"SHAmory"}
               type={"3D Design"}
               srcimg={"https://i.ibb.co/f9vnM6j/shad.png"}
             />
-           
+
             <TargetsPortfolio
               name={"Satoshi Skull"}
               type={"3D Design"}
               srcimg={"https://i.ibb.co/sJz8z0f/triskul.png"}
             />
-           
-           <TargetsPortfolio
+
+            <TargetsPortfolio
               name={"CyberHornet"}
               type={"3D Design"}
               srcimg={"https://i.ibb.co/hKNJWZH/dhornet.png"}
-            /> 
+            />
             <TargetsPortfolio
               name={"BTCasey"}
               type={"Branding"}

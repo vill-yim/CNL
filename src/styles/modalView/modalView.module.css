@@ -1,34 +1,31 @@
 .btn{
-    border-radius: 50%;
-    padding: 1rem ;
-    margin-top: 60px;
-    margin-left: 90%;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    justify-self: flex-end;
-    z-index: 1;
-    border: none;
-  }
-  
+  width: 95%;
+  height: 60px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn button{
+  width: 60px;
+  height: 60px;
+  padding-top: 60px;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;    
+  border: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 1;
+}
+
   .btn::before{
     content: '';
     z-index: -1;
-    width: 200%;
-    height:200%;
+    width: 100%;
+    height:100%;
   margin-top: 1rem;
-    border-radius: 100%;
-    position: absolute;
-    background-color: hsla(35 100% 50% / 0.75); /* Cambié el morado por el naranja de Bitcoin */
-    background-image: radial-gradient(
-        at 51% 89%,
-        hsla(40, 100%, 60%, 1) 0px, /* Naranja de Bitcoin */
-        transparent 50%
-    ),
-    radial-gradient(at 100% 100%, hsla(35, 100%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 22% 91%, hsla(35, 100%, 60%, 1) 0px, transparent 50%);
-    background-position: top;
+
   
     transition: all .5s ease-in-out;
   
@@ -43,11 +40,37 @@
   }
   
 
-  .img{
-    width: 1200px;
-    max-width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    margin: 0 auto;
-    aspect-ratio: 1/1;
-  }
+
+  /*---------------*/
+.content-svg{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+
+.img{
+  height: 100vh;
+  max-width: 100%;
+  object-fit: cover;
+aspect-ratio: 1/1;
+margin: 0 auto;
+}
+  /*---------------*/
+
+
+ /* border-radius: 100%;
+  position: absolute;
+  background-color: hsla(35 100% 50% / 0.75);
+  background-image: radial-gradient(
+      at 51% 89%,
+      hsla(40, 100%, 60%, 1) 0px,
+      transparent 50%
+  ),
+  radial-gradient(at 100% 100%, hsla(35, 100%, 60%, 1) 0px, transparent 50%),
+  radial-gradient(at 22% 91%, hsla(35, 100%, 60%, 1) 0px, transparent 50%);
+  background-position: top;
+  --------------- */
