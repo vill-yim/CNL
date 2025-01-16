@@ -1,17 +1,15 @@
+import Modal from "react-modal";
+import styles from "../../styles/modalView/modalView.module.css";
+import { ReactSVG } from "react-svg";
+import React from "react";
+import { useStoreView } from "../../utils/useStoreView";
 
-import Modal from 'react-modal';
-import styles from '../../styles/modalView/modalView.module.css'
-import React from 'react'
-import { useStoreView } from '../../utils/useStoreView';
-
-
-export const ModalView = ({children,src}) => {
-    const {view,setView}=useStoreView()
+export const ModalView = ({ children, src }) => {
+  const { view, setView } = useStoreView();
   return (
-    
     <Modal
     isOpen={view} 
-    onRequestClose={() => setView()}
+    onRequestClose={()=>setView(false)}
     style={{
       overlay: {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -24,6 +22,8 @@ export const ModalView = ({children,src}) => {
         right: "auto",
         border: "none",
         position:'fixed',
+        display:"flex",
+        flexDirection:"column",
         zIndex:'1000000',
         bottom: "auto",
         marginRight: "-50%",
@@ -34,10 +34,9 @@ export const ModalView = ({children,src}) => {
       },
     }}
   >
-    <button className={styles['btn']} onClick={() => setView()}> X </button>
-    <img src={src} alt="" />
+    <button className={styles['btn']} onClick={() => setTimeout(() => setView(false), 100)} 
+    > X </button>
+    <ReactSVG  className={styles['img']} src={src}/>
   </Modal>
-  
-  )
-}
-
+  )  
+};

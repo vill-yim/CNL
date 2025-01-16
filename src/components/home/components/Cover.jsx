@@ -18,6 +18,8 @@ export const Cover = () => {
 
       <div className={styles["content-video"]}>
     
+<iframe width="100%" style={{borderRadius:"40px"}} height="100%" src="https://www.dailymotion.com/embed/video/k2HKRpZb2lzDVcCf8mA" frameborder="0" allowfullscreen></iframe>
+
       </div>
 
       <div className={styles["btn-cover"]}>
@@ -31,5 +33,3 @@ export const Cover = () => {
   );
 };
 
-
-<iframe width="100%" style={{borderRadius:"40px"}} height="100%" src="https://www.dailymotion.com/embed/video/k2HKRpZb2lzDVcCf8mA" frameborder="0" allowfullscreen></iframe>
