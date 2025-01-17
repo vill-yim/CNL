@@ -27,6 +27,7 @@ export const ModalView = ({ src, onClose }) => {
           bottom: "auto",
           margin: "0 auto",
           paddingTop:"90px",
+          paddingBottom:"90px",
           background: "rgba(27, 27, 27, 0.85)",
           transform: "translate(-50%, -50%)",
           borderRadius: "10px",

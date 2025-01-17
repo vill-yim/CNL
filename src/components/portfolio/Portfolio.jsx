@@ -72,24 +72,22 @@ export const Portfolio = () => {
             <TargetsPortfolio
               name={"MYNODE"}
               type={"Social Media"}
-              srcimg={"https://i.ibb.co/bFnsCqZ/mynode2.png"}
+              srcimg={"../../../public/portfolio/design/lgkoffe.svg"}
             />
             <TargetsPortfolio
               name={"The Bitcoin Company"}
               type={"Btc Company"}
-              srcimg={"https://i.ibb.co/8bhXHfW/btcpany.png"}
+              srcimg={"../../../public/portfolio/design/RoninDojo.svg"}
             />
             <TargetsPortfolio
               name={"BTCaesy"}
               type={"Branding"}
-              srcimg={
-                "https://i.ibb.co/q0jsqYQ/btcasey.pnghttps://i.ibb.co/q0jsqYQ/btcasey.png"
-              }
+              srcimg={"../../../public/portfolio/design/tbc.svg"}
             />
             <TargetsPortfolio
               name={"Aether"}
               type={"Branding"}
-              srcimg={"https://i.ibb.co/hW7mZzy/aether.png"}
+              srcimg={"../../../public/portfolio/design/thebeef.svg"}
             />
           </div>
         )}
