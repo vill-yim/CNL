@@ -4,10 +4,12 @@ import { TargetsPortfolio } from "./TargetsPortfolio";
 import { ModalView } from "../modal/ModalView";
 import styles from "../../styles/portfolio/portfolio.module.css";
 import { portfolioStore } from "../../utils/changePortfolio";
+import { videoImg } from "../../utils/VideoImg";
 
 export const Portfolio = () => {
+  const { isImg, isVideo } = videoImg;
   const [seleccionado, setSeleccionado] = useState(0);
-  const { social, motion, design, d3, showPortfolio } = portfolioStore();
+  const { videos, motion, design, d3, showPortfolio } = portfolioStore();
 
   useEffect(() => {
     showPortfolio("design");
@@ -15,7 +17,7 @@ export const Portfolio = () => {
 
   const handleClick = (i) => {
     setSeleccionado(i);
-    const portfolio = ["design", "social", "motion", "d3"];
+    const portfolio = ["design", "videos", "motion", "d3"];
     showPortfolio(portfolio[i]);
   };
 
@@ -36,7 +38,7 @@ export const Portfolio = () => {
       <div className={styles["show-portfolios"]}>
         <div className={styles["header-portfolio"]}>
           <ul className="header-portfolio">
-            {["Design", "Social", "Motion", "3D"].map((item, index) => (
+            {["Design", "Videos", "Motion", "3D"].map((item, index) => (
               <li
                 key={index}
                 onClick={() => handleClick(index)}
@@ -91,137 +93,153 @@ export const Portfolio = () => {
             />
           </div>
         )}
-        {social && (
+        {videos && (
           <div className={styles["portfolios"]}>
             <TargetsPortfolio
-              name={"Rocket City Bitcoin"}
-              type={"Poster"}
-              srcimg={"https://i.ibb.co/YBgY6Ws/rocket.png"}
+              name={"BEC - Financial Advice "}
+              isVideo={"true"}
+              video={"https://streamable.com/e/l79l20?"}
+            />
+
+            <TargetsPortfolio
+              name={"FF - Gyms"}
+              isVideo={"true"}
+              video={"https://streamable.com/e/fgq1m0?"}
+            />
+
+            <TargetsPortfolio
+              name={"Question N1"}
+              isVideo={"true"}
+              video={"https://streamable.com/e/jbb1fi?"}
+            />
+
+            <TargetsPortfolio
+              name={"Ride Of Passage"}
+              isVideo={"true"}
+              video={
+                "https://player.vimeo.com/video/1047759920?h=cab0c95f80&amp;title=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              }
+            />
+
+            <TargetsPortfolio
+              name={"Seed Signer"}
+              isVideo={"true"}
+              video={"https://streamable.com/e/bcd6vq?"}
             />
             <TargetsPortfolio
-              name={"RoninDojo"}
-              type={"Booth"}
-              srcimg={"https://i.ibb.co/VxVcHpp/dojo.png"}
+              name={"VSL_Ambitious Labs"}
+              isVideo={"true"}
+              video={"https://streamable.com/e/k32y5k?"}
             />
+
             <TargetsPortfolio
-              name={"The Beff Initiative"}
-              type={"Beff Initiative"}
-              srcimg={"https://i.ibb.co/ynd9y61/beefinit.png"}
+              name={"Fred Thiel"}
+              isVideo={"true"}
+              video={"https://streamable.com/e/rgb1a5?"}
             />
+
             <TargetsPortfolio
-              name={"Rocket City Bitcoin"}
-              type={"Poster"}
-              srcimg={"https://i.ibb.co/3pyynkS/rockc.png"}
-            />
-            <TargetsPortfolio
-              name={"RoninDojo"}
-              type={"Merch"}
-              srcimg={"https://i.ibb.co/GfZsX7Y/rond.png"}
-            />
-            <TargetsPortfolio
-              name={"The Beef Initiative"}
-              type={"Beef Initiative"}
-              srcimg={"https://i.ibb.co/2jhRRjJ/tbeef.png"}
-            />
-            <TargetsPortfolio
-              name={"Lightning Koffe"}
-              type={"Label"}
-              srcimg={"https://i.ibb.co/Z6yFn66/koffe.png"}
-            />
-            <TargetsPortfolio
-              name={"Aether"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolios/social/aether.png"}
+              name={"Lan Carrol"}
+              isVideo={"true"}
+              video={
+                "https://player.vimeo.com/video/1047762277?h=88acab1771&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              }
             />
           </div>
         )}
         {motion && (
           <div className={styles["portfolios"]}>
             <TargetsPortfolio
-              name={"The Bitcoin Company"}
-              type={"Poster"}
-              srcimg={"https://i.ibb.co/WFMY7HR/btcompany.png"}
+              name={"10101"}
+              isVideo={"true"}
+              video={"https://streamable.com/e/i8m8em?"}
             />
             <TargetsPortfolio
-              name={"RoninDojo"}
-              type={"Video"}
-              srcimg={"../../../public/portfolios/motion/dojo.png"}
+              name={"Bitcoin Keeper"}
+              isVideo={true}
+              video={"https://streamable.com/e/xjnkp3?"}
             />
             <TargetsPortfolio
-              name={"Mynode"}
-              type={"Motion Graphic"}
-              srcimg={"https://i.ibb.co/QpFqjtr/mynode.png"}
+              name={"Exchange"}
+              isVideo={true}
+              video={"https://streamable.com/e/5fr41i?"}
             />
             <TargetsPortfolio
-              name={"The Bitcoin Company"}
-              type={"Pokemon Battle"}
-              srcimg={"https://i.ibb.co/nMkw3D7/image.png"}
+              name={"Luxor Mining"}
+              isVideo={true}
+              video={"https://streamable.com/e/7n2rnh?"}
+            />
+               <TargetsPortfolio
+              name={"Mynode Marketplace"}
+              isVideo={true}
+              video={"https://streamable.com/e/40d76f?"}
             />
             <TargetsPortfolio
-              name={"RoninDojo"}
-              type={"Logo Animation"}
-              srcimg={"../../../public/portfolios/motion/rond.png"}
+              name={"Ordis Respector"}
+              isVideo={true}
+              video={"https://streamable.com/e/bc1g53?"}
+            />
+         
+            <TargetsPortfolio
+              name={"Pokemon"}
+              isVideo={true}
+              video={"https://streamable.com/e/c2rn4l?"}
             />
             <TargetsPortfolio
-              name={"Mynode"}
-              type={"Getting Started"}
-              srcimg={"https://i.ibb.co/4VfBk39/mnode.png"}
-            />
-            <TargetsPortfolio
-              name={"BTCasey"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolios/motion/koffe.png"}
-            />
-            <TargetsPortfolio
-              name={"Aether"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolios/motion/aether.png"}
+              name={"The BTC Amazon Gift"}
+              isVideo={true}
+              video={"https://streamable.com/e/cfdwgf?"}
             />
           </div>
         )}
         {d3 && (
           <div className={styles["portfolios"]}>
             <TargetsPortfolio
-              name={"SHAmory"}
-              type={"3D design"}
-              srcimg={"https://i.ibb.co/pxL31xV/sha.png"}
-            />
-            <TargetsPortfolio
-              name={"Satoshi Skull"}
+              name={"Bitcoin Skull"}
               type={"3D Design"}
               srcimg={"https://i.ibb.co/Fg14VtV/skull.png"}
             />
             <TargetsPortfolio
-              name={"CyberHornet"}
-              type={"3D Design"}
-              srcimg={"https://i.ibb.co/022jqBX/hornet.png"}
+              name={"Bubbles Target"}
+              isVideo={true}
+              video={"https://streamable.com/e/1sf8j3?"}
             />
-            <TargetsPortfolio
-              name={"SHAmory"}
-              type={"3D Design"}
-              srcimg={"https://i.ibb.co/f9vnM6j/shad.png"}
-            />
-
-            <TargetsPortfolio
-              name={"Satoshi Skull"}
-              type={"3D Design"}
-              srcimg={"https://i.ibb.co/sJz8z0f/triskul.png"}
-            />
-
+            
             <TargetsPortfolio
               name={"CyberHornet"}
               type={"3D Design"}
               srcimg={"https://i.ibb.co/hKNJWZH/dhornet.png"}
             />
             <TargetsPortfolio
-              name={"BTCasey"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolios/3d/koffe.png"}
+              name={"Fold Preview"}
+              isVideo={true}
+              video={"https://streamable.com/e/9l3722?"}
             />
             <TargetsPortfolio
-              name={"Aether"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolios/3d/aether.png"}
+              name={"Model One"}
+              isVideo={true}
+              video={"https://streamable.com/e/24gayr?"}
+            />
+
+            <TargetsPortfolio
+              name={"Model Two"}
+              isVideo={true}
+              video={"https://streamable.com/e/b2sq2n?"}
+            />
+
+            <TargetsPortfolio
+              name={"Mynode Model Two"}
+              isVideo={true}
+              video={"https://streamable.com/e/4u1lar?"}
+            />
+            <TargetsPortfolio
+              name={"PDU Music Version"}
+              isVideo={true}
+              video={"https://streamable.com/e/knixsl?"}
+            />
+            <TargetsPortfolio 
+            name={"SHAmory"}
+            srcimg={"https://i.ibb.co/pxL31xV/sha.png"}
             />
           </div>
         )}

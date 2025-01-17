@@ -3,7 +3,7 @@ import styles from "../../styles/modalView/modalView.module.css";
 import { ReactSVG } from "react-svg";
 import React from "react";
 
-export const ModalView = ({ src, onClose }) => {
+export const ModalView = ({ src, onClose, video }) => {
   return (
     <Modal
       isOpen={true}
@@ -19,15 +19,15 @@ export const ModalView = ({ src, onClose }) => {
           left: "50%",
           right: "auto",
           border: "none",
-          position: 'fixed',
+          position: "fixed",
           display: "flex",
           flexDirection: "column",
-          justifyContent:"space-around",
-          zIndex: '1000000',
+          justifyContent: "space-around",
+          zIndex: "1000000",
           bottom: "auto",
           margin: "0 auto",
-          paddingTop:"90px",
-          paddingBottom:"90px",
+          paddingTop: "90px",
+          paddingBottom: "90px",
           background: "rgba(27, 27, 27, 0.85)",
           transform: "translate(-50%, -50%)",
           borderRadius: "10px",
@@ -35,18 +35,20 @@ export const ModalView = ({ src, onClose }) => {
         },
       }}
     >
-
-
-      <div className={styles["btn"]}><button
-        onClick={() => setTimeout(() => onClose(), 100)}
-      >X
-      </button></div>
+      <div className={styles["btn"]}>
+        <button onClick={() => setTimeout(() => onClose(), 100)}>X</button>
+      </div>
 
       <div className={styles["content-svg"]}>
-
-      <ReactSVG  className={styles['img']} src={src} />
+        <ReactSVG className={styles["img"]} src={src} />
+        <div className={`${styles["content-video"]}`}>
+          <iframe
+            src={video}
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
-      
     </Modal>
   );
 };

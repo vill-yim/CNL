@@ -64,6 +64,24 @@ margin: 0 auto;
   /*---------------*/
 
 
+
+  .content-video {
+    width: 920px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    aspect-ratio: 11/6;
+    border-radius: 40px;
+    transform: translateY(-10%);
+    max-width: 100%;
+  }
+
+  .content-video iframe{
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-110%);
+  }
+
  /* border-radius: 100%;
   position: absolute;
   background-color: hsla(35 100% 50% / 0.75);

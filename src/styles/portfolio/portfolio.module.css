@@ -150,6 +150,20 @@ margin: 10px 0;
   background-repeat: no-repeat;
 }
 
+.iframe{
+  width:320px;
+  aspect-ratio: 1/1;
+  max-height: 220px;
+transition: all .5s ease-in-out;
+margin: 10px 0;
+  border-radius: 12px;
+  background-color: rgb(135, 138, 139);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+z-index: -1;
+background-repeat: no-repeat;
+}
 
 
 .projectfolio:hover .img-proj{
