@@ -6,6 +6,9 @@ import styles from "../../styles/portfolio/portfolio.module.css";
 import { portfolioStore } from "../../utils/changePortfolio";
 import { videoImg } from "../../utils/VideoImg";
 
+//svg e imagenes 
+import parkImg from "../../../public/portfolio/design/btcpark.svg"
+
 export const Portfolio = () => {
   const { isImg, isVideo } = videoImg;
   const [seleccionado, setSeleccionado] = useState(0);
@@ -54,7 +57,7 @@ export const Portfolio = () => {
             <TargetsPortfolio
               name={"Bitcoin Park"}
               type={"Poster"}
-              srcimg={"../../../public/portfolio/design/btcpark.svg"}
+              srcimg={parkImg}
             />
             <TargetsPortfolio
               name={"MYNODE"}
