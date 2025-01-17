@@ -8,6 +8,14 @@ import { videoImg } from "../../utils/VideoImg";
 
 //svg e imagenes 
 import parkImg from "../../../public/portfolio/design/btcpark.svg"
+import bkfday from "../../../public/portfolio/design/blackf.svg"
+import espalda from "../../../public/portfolio/design/spalda.svg"
+import digital from "../../../public/portfolio/design/hphour.svg"
+import koffe from "../../../public/portfolio/design/lgkoffe.svg"
+import rdojo from "../../../public/portfolio/design/RoninDojo.svg"
+import tbc from "../../../public/portfolio/design/tbc.svg"
+import Tennessee from "../../../public/portfolio/design/thebeef.svg"
+import shamory from "../../../public/portfolio/design/shamory.svg"
 
 export const Portfolio = () => {
   const { isImg, isVideo } = videoImg;
@@ -56,43 +64,35 @@ export const Portfolio = () => {
           <div className={styles["portfolios"]}>
             <TargetsPortfolio
               name={"Bitcoin Park"}
-              type={"Poster"}
               srcimg={parkImg}
             />
             <TargetsPortfolio
-              name={"MYNODE"}
-              type={"Social Media"}
-              srcimg={"../../../public/portfolio/design/blackf.svg"}
+              name={"Black Friday"}
+              srcimg={bkfday}
             />
             <TargetsPortfolio
-              name={"The Bitcoin Company"}
-              type={"Poster"}
-              srcimg={"../../../public/portfolio/design/spalda.svg"}
+              name={"Espalda Hig-res"}
+              srcimg={espalda}
             />
             <TargetsPortfolio
-              name={"Bitcoin Park"}
-              type={"Poster"}
-              srcimg={"../../../public/portfolio/design/hphour.svg"}
+              name={"Happy Hour Digital Flyer"}
+              srcimg={digital}
             />
             <TargetsPortfolio
-              name={"MYNODE"}
-              type={"Social Media"}
-              srcimg={"../../../public/portfolio/design/lgkoffe.svg"}
+              name={"Lightning Koffe"}
+              srcimg={koffe}
             />
             <TargetsPortfolio
-              name={"The Bitcoin Company"}
-              type={"Btc Company"}
-              srcimg={"../../../public/portfolio/design/RoninDojo.svg"}
+              name={"Ronin Dojo"}
+              srcimg={rdojo}
             />
             <TargetsPortfolio
-              name={"BTCaesy"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolio/design/tbc.svg"}
+              name={"TBC"}
+              srcimg={tbc}
             />
             <TargetsPortfolio
-              name={"Aether"}
-              type={"Branding"}
-              srcimg={"../../../public/portfolio/design/thebeef.svg"}
+              name={"Tennessee Beef Initiative"}
+              srcimg={Tennessee}
             />
           </div>
         )}
@@ -242,7 +242,7 @@ export const Portfolio = () => {
             />
             <TargetsPortfolio 
             name={"SHAmory"}
-            srcimg={"https://i.ibb.co/pxL31xV/sha.png"}
+            srcimg={shamory}
             />
           </div>
         )}
