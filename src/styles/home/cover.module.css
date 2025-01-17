@@ -46,6 +46,10 @@
   max-width: 100%;
 }
 
+.content-video iframe .next_button{
+  display: none;
+}
+
 .btn-cover{
   width: 300px;
   margin: 0 auto; 

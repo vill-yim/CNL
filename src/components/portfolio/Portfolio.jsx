@@ -120,7 +120,7 @@ export const Portfolio = () => {
               name={"Ride Of Passage"}
               isVideo={"true"}
               video={
-                "https://player.vimeo.com/video/1047759920?h=cab0c95f80&amp;title=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                "https://player.vimeo.com/video/1047759920?h=cab0c95f80&controls=1&title=0&byline=0&portrait=0&autopause=0&player_id=0&app_id=58479"
               }
             />
 
@@ -145,7 +145,7 @@ export const Portfolio = () => {
               name={"Lan Carrol"}
               isVideo={"true"}
               video={
-                "https://player.vimeo.com/video/1047762277?h=88acab1771&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                "https://player.vimeo.com/video/1047764811?h=eb97b15791&autoplay=0&controls=1&title=0&byline=0&portrait=0&app_id=58479"
               }
             />
           </div>
