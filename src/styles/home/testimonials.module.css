@@ -70,15 +70,17 @@
 }
 
 .testimonial p {
-    height: 110px;
+    height: 180px;
     padding: 1rem;
     margin-top: 1rem;
     justify-self: center;
-    overflow: hidden;
+    overflow-y: auto;
+    /*
+    
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    white-space: pre-line; 
+    white-space: pre-line; */
     width: 100%;
     box-sizing: border-box;
   }
@@ -87,14 +89,10 @@
     -webkit-line-clamp: unset;
 
   transition: all .5s ease-in-out;
-    overflow:visible;
+    overflow:autoe;
 
 }
 
-.content-target:hover .testimonial{
-  transform: translateY(-10px);
-
-}
 
 
 .name-testimoni {

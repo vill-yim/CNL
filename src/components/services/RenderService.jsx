@@ -48,6 +48,7 @@ export const RenderService = ({
   return (
     <>
       <div className={styles["cover-services"]}>
+        <input required style={{display:"none"}}/>
         <div className={styles["descript-cover"]}>
           <div className={styles["title-cover"]}>
             <h2>{title_service}</h2>

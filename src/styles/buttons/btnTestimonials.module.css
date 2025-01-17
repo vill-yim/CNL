@@ -18,6 +18,14 @@
   overflow: hidden;
 }
 
+.Btn:hover{
+  background:  rgb(223, 115, 14);
+  color: #ffd29a;
+  border: 1px solid #333333;
+}
+
+
+/*
 .Btn::before {
   position: absolute;
   content: "";
@@ -54,4 +62,4 @@ font-weight: 900;
 
 .Btn:active {
   transform: scale(0.95);
-}
+}*/
