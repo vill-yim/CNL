@@ -51,11 +51,11 @@
   justify-content: space-between;
   max-width: 100%;
   border-radius: 40px;
-  height: 530px;
+  height: 420px;
 }
 
 .testimonial {
-  transform: translateY(90px);
+  transform: translateY(60px);
   align-items: center;
   display: flex;
   font-family: CreatoDisplayMedium;
